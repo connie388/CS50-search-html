@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Search</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="search-section">
+      <div id="go-back"><a href="/index.html">Go back</a></div>
+      <form action="https://images.google.com/images">
+        <!--
+        <img id="advance-search-logo" src="\google-advance-searh-logo.png" /> -->
+        <img
+          id="advance-search-logo"
+          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        />
+        <h1>Advanced Search</h1>
+
+        <h2>Find pages with...</h2>
+        <div id="search-container">
+          <div class="search-type">all these words:</div>
+          <input class="search-by" type="text" id="input-1" name="as_q" />
+          <div class="search-explained">
+            Type the important words: tri-colour rat terrier
+          </div>
+
+          <div class="search-type">this exact word or phrase:</div>
+          <input class="search-by" type="text" id="input-2" name="as_epq" />
+          <div class="search-explained">
+            Put exact words in quotes: "rat terrier"
+          </div>
+
+          <div class="search-type">any of these words:</div>
+          <input class="search-by" type="text" id="input-3" name="as_oq" />
+          <div class="search-explained">
+            Type OR between all the words you want: miniature OR standard
+          </div>
+
+          <div class="search-type">none of these words:</div>
+          <input class="search-by" type="text" id="input-4" name="as_eq" />
+          <div class="search-explained">
+            Put a minus sign just before words that you don't want: -rodent,
+            -"Jack Russell"
+          </div>
+        </div>
+
+        <input class="search-submit" type="submit" />
+      </form>
+    </div>
+  </body>
+</html>
